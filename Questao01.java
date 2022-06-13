@@ -1,50 +1,30 @@
-package atividade02programacao;
+package atividadeExtra;
 
 import java.util.Scanner;
 
 public class Questao01 {
 
 	public static void main(String[] args) {
-/*Crie um algoritmo que solicite ao usuário três números inteiros. 
-Imprima na tela qual é o maior e o menor.
+		/*Faça um algoritmo que calcule o número de pontos acumulados 
+por um time de futebol em um campeonato, dada a quantidade de vitórias
+e a quantidade de empates que o time tem até o momento. Considere que 
+uma vitória vale 3 pontos e um empate vale 1 ponto.
 */
+		Scanner leia = new Scanner(System.in);//objeto de entrada
 		
-	Scanner leia = new Scanner(System.in);//Objeto de entrada
+	System.out.println("PONTOS DO TIME");
+	System.out.println("--------------------");
+	System.out.println("Informe o número de vitorias do time:");
+	int vitorias = leia.nextInt();
+	System.out.println("Qual a quantidade de empates do time?");
+	int empates = leia.nextInt();
 	
-	System.out.println("MAIOR E MENOR NUMERO");
-	System.out.println("-------------------------");
-	System.out.println("informe um numero inteiro:");
-	int a = leia.nextInt();
-	System.out.println("informe outro numero:");
-	int b = leia.nextInt();
-	System.out.println("informe outro numero:");
-    int c = leia.nextInt();
-    
-    int maior = 0;
-    int menor = 0;
-    
-    //MAIOR NUMERO
-    if (a>b) {
-    	maior=a;
-    }else if (b>c) {
-    	maior=b;
-    }else if (c>a) {
-    	maior=c;
-    }
-    
-    //MENOR NUMERO
-    if (a<b){
-    	menor=a;
-    }else if (b<c) {
-    	menor=b;
-    }else if (c<a) {
-    	menor=c;
-    }
-    //RESPOSTA
-    System.out.println(".................................");
-    System.out.println("O maior número é: "+maior);
-    System.out.println("O menor número é: "+menor);
-        
-    
+	int pontos = (vitorias*3)+(empates*1);
+	System.out.println("...........................................");
+	System.out.println("A quantidade de pontos acumulados é "+pontos);
+	
+		
+		
 	}
+
 }
