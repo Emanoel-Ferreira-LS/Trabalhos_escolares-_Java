@@ -25,7 +25,7 @@ da aplicação.*/
 public class ConnectionFactory {
     public Connection getConnection() {
         try {
-            return DriverManager.getConnection("jdbc:mysql://localhost:3306/AppNiceFoodsProjetoCrud", "root", "E2005fls#2023");
+            return DriverManager.getConnection("jdbc:mysql://localhost:3306/AppNiceFoodsProjetoCrud", "root", "minha-senha");
             
         } catch (SQLException excecao) {
             throw new RuntimeException(excecao);
